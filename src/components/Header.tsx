@@ -5,29 +5,25 @@ import { GlobalStyles, Grid, Link } from "@mui/material";
 function Header() {
   return (
     <>
-      <GlobalStyles
-        styles={{
-          body: { margin: 0, padding: 0, maxWidth: 0 },
-          html: { margin: 0, padding: 0 },
-        }}
-      />
+
       <Grid
         container
-        sx={{ width: "100%" }}
+        sx={{ minWidth: '100vw' }}
+        p={6}
         // justifyContent={"space-around"}
         alignItems={"center"}
       >
-        <Grid item xs={10} container alignItems={"center"}>
+        <Grid item xs={8}  alignItems={"center"}>
           <img src={cageman} width={200} alt="Logo" />
         </Grid>
-        <Grid item xs={2} container>
-          <Link href="#" sx={{ margin: 1 }}>
+        <Grid item xs={4} >
+          <Link href="#" sx={{ margin: 5 }}>
             Home
           </Link>
-          <Link href="#" sx={{ margin: 1 }}>
+          <Link href="#" sx={{ margin: 5 }}>
             Listen
           </Link>
-          <Link href="#" sx={{ margin: 1 }}>
+          <Link href="#" sx={{ margin: 5 }}>
             Contact
           </Link>
         </Grid>

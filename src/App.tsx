@@ -14,9 +14,12 @@ function App() {
             margin: 0,
             padding: 0,
             minHeight: "100vh",
-            background: "linear-gradient(to bottom, #010101, #1d263d)"
+            background: "linear-gradient(to bottom, #010101, #1d263d)",
+            maxWidth: 0,
+            overflowX: "hidden",
           },
-          html: { margin: 0, padding: 0, height: "100%" },
+          html: { margin: 0, padding: 0, height: "100%"
+          }
         }}
       />
 
